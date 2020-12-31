@@ -1,0 +1,124 @@
+<div class="stepper">
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li role="presentation" class="active">
+      <a class="persistant-disabled" href="#stepper-step-1" data-toggle="tab" aria-controls="stepper-step-1" role="tab" title="Step 1"><span class="round-tab">1</span></a><h5>Contact info</h5>
+    </li>
+    <li role="presentation" class="disabled">
+      <a class="persistant-disabled" href="#stepper-step-2" data-toggle="tab" aria-controls="stepper-step-2" role="tab" title="Step 2"><span class="round-tab">2</span></a><h5>Motivation</h5>
+    </li>
+    <li role="presentation" class="disabled">
+      <a class="persistant-disabled" href="#stepper-step-3" data-toggle="tab" aria-controls="stepper-step-3" role="tab" title="Step 3"><span class="round-tab">3</span></a><h5>Landscape info</h5>
+    </li>
+    <li role="presentation" class="disabled">
+      <a class="persistant-disabled" href="#stepper-step-4" data-toggle="tab" aria-controls="stepper-step-4" role="tab" title="Complete"><span class="round-tab">4</span></a><h5>Operational support</h5>
+    </li>
+  </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" role="tabpanel" id="stepper-step-1">
+        <h3 >1. Contact information</h3>
+          <div class="row">
+              <div class="col-md-6">
+                  <h6>Your details:</h6>
+                  
+                  <label><span class="req">Your email address:</span>[email* contact-email placeholder "Your email address"]</label>
+                  <label><span class="req">Your full name:</span>[text* contact-full-name placeholder "Your full name"]</label>
+                  <label><span>Your affiliation:</span>[text contact-affiliation placeholder "Affiliation"]</label>
+                  <label><span class="req">What is your relationship to the proposed landscape?</span>[text* contact-relationship placeholder "Your answer"]</label>
+              </div>
+              <div class="col-md-6">
+                  <h6>Landscape Custodianship:</h6>
+                  <label><span class="req">Are you a land custodian within the proposed landscape?:</span>[select* contact-custodian class:fieldcust include_blank "Yes" "No"]</label>
+                  <label class="input-cust"><span>Please state the landscape custodian's information:</span>[text custodian-contact placeholder "Contact information of the proposed landscape custodian"]</label>
+                  <h6>List of Collaborators:</h6>
+                  <label><span>Please include name, affliation and email:</span>[textarea list-collaborators placeholder "List collaborators"]</label>
+                  <h6>Collaboration & Sharing Agreement:</h6>
+                  [checkbox* agreed-sharing-landscape use_label_element class:req "I accept that my contact information will be shared with users submitting proposals within the same landscape."]
+                  [checkbox* agreed-sharing-collaborative use_label_element class:req "I agree that the contact information shared will be used solely for academic and collaborative purposes."]
+              </div>
+          </div>
+        <ul class="list-inline pull-right">
+          <li>
+            <a class="btn btn-primary next-step">Next</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" role="tabpanel" id="stepper-step-2">
+        <h3 >2. Justification of Landscape</h3>
+        <div class="row">
+        <div class="col-md-6">
+          <h6>Tell us why you think this site is appropriate as a EFTEON research landscape.</h6>
+          <label><span>State the long term scientific questions that the landscape is suited to answer:</span>[textarea long-term-questions placeholder "Your answer"]</label>
+          <label><span>Describe how the proposed landscape meets the selection principals:</span>[textarea selection-principals placeholder "Your answer"]</label>
+        </div>
+        <div class="col-md-6">
+          <h6 style="margin-bottom: 30px;">landscape selection principles:</h6>
+          <ul class="txt-small-li">
+            <li><strong>Long Term Environmental Research:</strong> The EFTEON is intended for long term continuous operation and the primary purpose of the network is to provide long term environmental data for the national and global research community. Site operations need to undertake measurements and observations that are of value at both the short and long term. Selected landscapes need to be available for multi-decade operation.</li>
+            <li><strong>Research Platform:</strong> The EFTEON is intended as a research platform with an open data and open platform use policy, in order to facilitate the use of the infrastructure and data by other researchers, both nationally and internationally.</li>
+            <li><strong>Spatial diversity coverage:</strong> Sites selected for the network are to represent the major biomes and human transformed ecosystems and their embedded aquatic systems. A focus on lived-in landscapes and landscapes in transition (climate change or land use change ).</li>
+            <li><strong>Historic observational and experimental datasets:</strong> Incorporation of existing research and linking to existing socio-ecological datasets. The leverage of long term social-ecological and earth system data sets would be considered an advantage in the selection of the sites. A strong emphasis on data archiving and provision and data archaeology to ensure long term availability and continuity of datasets.</li>
+            <li><strong>Experiments and manipulations:</strong> Where appropriate implement and sustain appropriate simple experiments to help elucidate a process-level understanding of ecosystem changes.</li>
+          </ul>
+        </div>
+        
+        </div>
+        <ul class="list-inline pull-right">
+          <li>
+            <a class="btn btn-default prev-step">Back</a>
+          </li>
+          <li>
+            <a class="btn btn-primary next-step">Next</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" role="tabpanel" id="stepper-step-3">
+      <h3 >3. Enter Landscape Information</h3>
+        <p>The site proposed represents the center of your proposed landscape, if multiple proposals are received within a single landscape area they will be grouped during the regional work-shopping assessment of proposals.</p>
+        <div class="row">
+              <div class="col-md-6">
+                  <h6>General details:</h6>
+                  <p>Since the nomination is for a landscape in the 10-100km² size range please indicate a central reference point for the landscape i.e., entrance gate, site office, research center, existing infrastructure…</p>
+                  <label><span class="req">Site Name:</span>[text* site-name placeholder "Site Name"]</label>
+                  <label><span class="req">Latitude (decimal degrees):</span>[number* number-lati "Latitude"]</label>
+                  <label><span class="req">Longitude (decimal degrees):</span>[number* number-long "Longitude"]</label>
+                  <label><span class="req">State the significant land uses within the landscape:</span>[text* land-users placeholder "Your anser"]</label>
+                  <h6>Landscape in Science:</h6>
+                  <p>What role does the landscape have now, or in the past with regard to knowledge generation.</p>
+                  <label><span>Is the landscape part of any ongoing research?</span>[checkbox ongoing-research use_label_element "Environmental research" "Socioecological research" "Earth systems research" "Unknown" "Not involved in any research."]</label>
+                  <label><span class="req">Is there historical data available within the landscape?</span>[select* historical-data include_blank "Yes" "No" "Unknown"]</label>
+                  <label><span>Briefly list the historic or current data/experiments within the landscape:</span>[textarea data-experiments placeholder "Your answer"]</label>
+              </div>
+              <div class="col-md-6">
+                  <h6>Landscape information:</h6>
+                  <label><span>Landscape Biome (you may select more than one option if the landscape occurs on a transition):</span>[checkbox landscape-biome use_label_element "Urban" "Savanna" "Grassland" "Forest" "Nama-karoo" "Albany Thicket" "Fynbos" "Desert" "Indian Ocean Coastal Belt" "Succulent Karoo"]</label>
+                  <label><span>What are the special features of the proposed landscape?</span>[checkbox special-features use_label_element "Attitudinal gradient" "Strategic water source area" "Biodiversity importance hotspot" "Projected climate change hotspot" "Area of expected future development (e.g. urban, agriculture, mining or energy)" "Rural-Urban Transition Zone" "None" "Other"]</label>
+                  <label><span>If other, please specify:</span>[text other-features placeholder "Other features"]</label>
+              </div>
+          </div>
+          <ul class="list-inline pull-right">
+                  <li>
+                    <a class="btn btn-default prev-step">Back</a>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary next-step">Next</a>
+                  </li>
+                </ul>
+      </div>
+      <div class="tab-pane fade" role="tabpanel" id="stepper-step-4">
+        <h3>4. Logistical and Operational Support</h3>
+        <p>Describe the status of services available around the landscape.</p>
+        <label><span>Is there accommodation facilities within 1 hours drive?</span>[select accomodation-facilities include_blank "Yes" "No" "Unknown"]</label>
+        <label><span>Is there mains electricity available within the landscape?</span>[select electricity-available include_blank "Yes" "No" "Unknown"]</label>
+        <label><span>Please state any nearby facilities that could offer logistical or operational support within the landscape:</span>[textarea nearby-facilities placeholder "Your answer"]</label>
+        <label><span>Would you like to join our mailing list? <em class="fa fa-info fa-circ" data-toggle="tooltip" data-placement="top" title="Our mailer includes updates and event information such as upcoming workshops"></em></span>[radio mailing-list use_label_element default:1 "Yes" "No"]</label>
+        <ul class="list-inline pull-right">
+              <li>
+                <a class="btn btn-default prev-step">Back</a>
+              </li>
+              <li>
+                [submit class:btn class:btn-primary "Submit your landscape"]
+              </li>
+            </ul>
+      </div>
+    </div>
+</div>

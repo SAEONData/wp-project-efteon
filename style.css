@@ -1,0 +1,474 @@
+/* General */
+.page .page-wrap .content-wrapper{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.img-white img{
+  -webkit-filter: invert(100%);
+  filter: brightness(0) invert(1);
+}
+.txt-small-li li{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.req{
+  position:relative;
+}
+.req:after{
+  display: inline-block;
+  content: '*';
+  color: red;
+  font-size: 20px;
+  line-height: 14px;
+  margin-left: 5px;
+}
+.wpcf7-checkbox.req:after{
+  position: absolute;
+  top: -23px;
+  left: 11px;
+}
+.wpcf7-checkbox.req label{
+  padding-left: 11px;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+  height: initial;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+/* Menu */
+#mainnav{
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 769px) {
+  .site-header .col-md-4{
+      width: 46%;
+  }
+  .site-header .col-md-8{
+      width: 54%;
+  }
+  .site-description {
+      font-size: 12px;
+      display: inline-block;
+      width: 251px;
+      margin: 2px 0 19px 9px;
+      float: right;
+  }
+  .site-title {
+      display: inline-block;
+      width: 162px;
+      float: right;
+      font-size: 39px;
+      line-height: 44px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  .home-img{
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
+  .site-description,.site-title,.nrf-saeon-logo{
+    -webkit-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+    margin-top:0px;
+  }
+  .float-header .site-description,.float-header .site-title{
+    -webkit-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+    margin-top:-90px;
+  }
+  .float-header .nrf-saeon-logo{
+    max-width: 195px;
+  }
+  .site-header.float-header {
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  .site-header.float-header .col-md-8 {
+    width: 54%;
+    padding-top: 6px;
+  }
+}
+/* Contact Form */
+.input-cust{
+  display:none;
+}
+.stepper .nav-tabs {
+  position: relative;
+}
+.stepper label span {
+  display:block;
+  font-weight: 300;
+  margin: 5px 0;
+}
+.stepper h6 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.stepper h3{
+  margin-bottom: 65px;
+}
+.stepper h6:after {
+  display:block;
+  content:"";
+  background:#f1f1f1;
+  height:3px;
+  width:80px;
+  position: absolute;
+  bottom: 0;
+}
+.stepper .nav-tabs > li {
+  position: relative;
+}
+.stepper .nav-tabs > li:after {
+  content: '';
+  position: absolute;
+  background: #f1f1f1;
+  display: block;
+  width: 100%;
+  height: 5px;
+  top: 30px;
+  left: 50%;
+  z-index: 1;
+}
+.stepper .nav-tabs > li.completed::after {
+  background: #303fd7;
+}
+.stepper .nav-tabs > li:last-child::after {
+  background: transparent;
+}
+.stepper .nav-tabs > li.active:last-child .round-tab {
+  background: #303fd7;
+}
+.stepper .nav-tabs > li.active:last-child .round-tab::after {
+  content: '✔';
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  display: block;
+}
+.stepper .nav-tabs [data-toggle='tab'] {
+  width: 25px;
+  height: 25px;
+  margin: 20px auto;
+  border-radius: 100%;
+  border: none;
+  padding: 0;
+  color: #f1f1f1;
+  display: block;
+  position: relative;
+}
+.stepper .nav-tabs [data-toggle='tab']:hover {
+  background: transparent;
+  border: none;
+}
+.stepper .nav-tabs > .active > [data-toggle='tab'], .stepper .nav-tabs > .active > [data-toggle='tab']:hover, .stepper .nav-tabs > .active > [data-toggle='tab']:focus {
+  color: #303fd7;
+  cursor: default;
+  border: none;
+}
+.stepper .tab-pane {
+  position: relative;
+  padding-top: 50px;
+}
+.stepper .round-tab {
+  width: 25px;
+  height: 25px;
+  line-height: 22px;
+  display: inline-block;
+  border-radius: 25px;
+  background: #fff;
+  border: 2px solid #303fd7;
+  color: #303fd7;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+}
+.stepper .completed .round-tab {
+  background: #303fd7;
+}
+.stepper .completed .round-tab::after {
+  content: '✔';
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  display: block;
+}
+.stepper .active .round-tab {
+  background: #fff;
+  border: 2px solid #303fd7;
+}
+.stepper .active .round-tab:hover {
+  background: #fff;
+  border: 2px solid #303fd7;
+}
+.stepper .active .round-tab::after {
+  display: none;
+}
+.stepper .disabled .round-tab {
+  background: #fff;
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+.stepper .disabled .round-tab:hover {
+  color: #00a6f5;
+  border: 2px solid #303fd7;
+}
+.stepper .disabled .round-tab::after {
+  display: none;
+}
+.stepper h5{
+  text-align: center;
+  margin-top: -33px;
+  font-size: 14px;
+}
+.stepper .active h5,
+.stepper .completed h5{
+  color: #303fd7;
+}
+.stepper label input[type=checkbox] {
+  margin: 9px 0 0;
+  position: absolute;
+  left: 0;
+}
+.stepper span.wpcf7-list-item {
+  margin: 0 0 0 20px;
+}
+/* Bootstrap tabs */
+@media (min-width: 768px){
+.nav-tabs.nav-justified>li {
+  display: table-cell;
+  width: 1%;
+}
+}
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav-justified {
+  width: 100%;
+}
+.nav-tabs.nav-justified>li {
+  float: none;
+}
+.nav-tabs>li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav>li {
+  position: relative;
+  display: block;
+}
+.tab-content>.tab-pane {
+  display: none;
+}
+.tab-content>.active {
+  display: block;
+}
+.fade.in {
+  opacity: 1;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: normal;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  line-break: auto;
+}
+.tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: .9;
+}
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 4px;
+}
+.fa-circ{
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 17px;
+  margin: 5px 0 0 5px;
+  position: absolute;
+}
+.fa-circ[data-toggle="tooltip"]:hover{
+  cursor:pointer;
+}
+/* Buttons */
+input[type="submit"].btn {
+  text-transform: none;
+  padding: 8px 20px;
+}
+a.btn,input[type="submit"].btn{
+  background: #00dafc;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+a.btn:hover,input[type="submit"].btn:hover{
+  background: #4632da;
+  border-color: #4632da;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-default{
+  background: #f1f1f1;
+  color: #767676;
+}
+.btn-default:hover{
+  background: #767676;
+  color: #fff;
+}
+/* submission page */
+div.wpcf7-response-output {
+  margin: 6em 0.5em 1em;
+}
+.stepper textarea,.stepper input[type="email"],.stepper input[type="text"],.stepper label{
+  width:100%;
+}
+.stepper .wpcf7-radio span {
+  display: inline;
+}
+.stepper .wpcf7-radio label {
+  width:auto;
+}
+@media (min-width: 768px){
+  .page-id-154 .stepper .nav-tabs{
+      margin-top: -123px;
+      margin-left: -162px;
+      width: 1446px;
+  }
+  .page-id-154 .stepper h5 {
+      color: #fff;
+      font-weight: 300;
+  }
+  .page-id-154 .stepper .disabled .round-tab {
+      color: #0480ef;
+  }
+  .page-id-154 .stepper .active h5,.page-id-154 .stepper .completed h5 {
+      color: #fff;
+  }
+  .page-id-154 .stepper .active .round-tab,
+  .page-id-154 .stepper .completed .round-tab {
+      background: #01d3fb;
+      border: 2px solid #01d3fb;
+      color: #fff;
+  }
+  .page-id-154 .stepper .completed .round-tab {
+      color: #01d3fb;
+  }
+  .page-id-154 .stepper .nav-tabs > li.completed::after {
+      background: #01d3fb;
+  }
+}
+/* submission page */
+@media (min-width: 768px){
+  #mainnav ul li.btn-orange a{
+      background-color: #f0ad4e;
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-top: -6px;
+  }
+  #mainnav ul li.btn-orange a:hover{
+      background-color:#00dafc;
+      color: #fff;
+  }
+  #mainnav {
+      padding-top: 5px;
+  }
+}
+/* Footer items */
+.footer-widgets label{
+  width: 60px;
+}
+.footer-widgets .btn-default{
+    line-height: initial;
+    border: none;
+    background: #00dafc;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: none;
+}
+.footer-widgets .btn-default:hover{
+  background:#f0ad4e;
+}
+
+.footer-widgets #media_image-4 {
+    margin-bottom: 0;
+    margin-top: -31px;
+}
+
+
